@@ -1,5 +1,6 @@
 package br.com.dio.gof;
 
+import br.com.dio.gof.facade.Facade;
 import br.com.dio.gof.singleton.SingletonEager;
 import br.com.dio.gof.singleton.SingletonLazy;
 import br.com.dio.gof.singleton.SingletonLazyHolder;
@@ -13,7 +14,12 @@ public class Teste {
 
 	public static void main(String[] args) {
 		
+		//Facade
+		Facade facade = new Facade();
+		facade.migrarCliente("Luan", "2341434");
+		
 		//Strategy
+		System.out.println("--------------------");
 		Comportamento normal = new ComportamentoNormal();
 		Comportamento defensivo = new ComportamentoDefensivo();
 		Comportamento agressivo = new ComportamentoAgressivo();
