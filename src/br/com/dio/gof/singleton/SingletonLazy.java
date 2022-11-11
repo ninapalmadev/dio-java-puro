@@ -1,4 +1,4 @@
-package br.com.dio.gof;
+package br.com.dio.gof.singleton;
 
 /**
  * Singleton "preguiçoso".
